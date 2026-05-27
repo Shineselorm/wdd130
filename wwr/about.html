@@ -12,12 +12,14 @@
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Volta River Adventures Logo">
+        <img class="logo" src="images/logo.png" alt="Volta River Adventures Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -32,18 +34,49 @@
                     you can trust.</p>
             </article>
         </div>
-        <section>
+        <section class="history">
             <h2>History</h2>
-            <p>Founded in 2010, Volta River Adventures began as a small outfit guiding local
-                adventurers along the Volta River. Over the years, our team has grown into one of
-                the region's most trusted rafting companies, combining experienced guides, quality
-                equipment, and a passion for outdoor adventure.</p>
+            <div class="history-content">
+                <p>Founded in 2010, Volta River Adventures began as a small outfit guiding local
+                    adventurers along the Volta River. Our founders wanted visitors to experience
+                    Ghana's rivers with confidence, safety, and respect for the environment.</p>
+                <img src="images/history.jpg" alt="Rafting team on the Volta River">
+                <p>Over the years, our team has grown into one of the region's most trusted rafting
+                    companies, combining experienced guides, quality equipment, and a passion for
+                    outdoor adventure on every trip we lead.</p>
+            </div>
         </section>
-        <section>
+        <section class="adventure">
             <h2>Adventure Awaits You!</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/rafting01.jpg" alt="Rafting through Los Dientes del Diablo rapids">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting02.jpg" alt="Rafting through Big Mallard rapids">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting03.jpg" alt="Half day rafting adventure on the river">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting04.jpg" alt="Sunset rafting trip on calm water">
+                    <figcaption>Sunset Serenity</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting05.jpg" alt="Family rafting adventure">
+                    <figcaption>Family Float</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
+        <div class="footer-info">
+            <p><a href="mailto:info@voltariveradventures.com">info@voltariveradventures.com</a></p>
+            <p class="copyright">&copy;2026 Volta River Adventures Shine Selorm Sedziafa</p>
+        </div>
         <nav class="socialmedia">
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook Icon">
@@ -55,7 +88,6 @@
                 <img src="images/instagram.svg" alt="Instagram Icon">
             </a>
         </nav>
-        <p>&copy;2026 Volta River Adventures Shine Selorm Sedziafa</p>
     </footer>
 </body>
 
