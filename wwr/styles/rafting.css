@@ -193,3 +193,169 @@ h1 {
     font-size: 0.75rem;
     margin-top: 0.25rem;
 }
+
+.navigation a[aria-current="page"] {
+    background-color: var(--accent1-color);
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h1 {
+    position: static;
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0;
+}
+
+.contact-info p {
+    margin: 8px 16px;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+}
+
+.map-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 16px 16px;
+    padding: 0 8px 8px;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 0.25rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.contact-form fieldset {
+    border: 2px solid var(--primary-color);
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.contact-form fieldset label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 1rem;
+    margin-top: 0;
+}
+
+.contact-form .checkbox-label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form .checkbox-label input {
+    width: auto;
+}
+
+.contact-form button[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+.employees {
+    background-color: #e8e8e8;
+    margin: 16px;
+    padding: 16px 8px;
+}
+
+.employees h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+.employee-gallery figure {
+    flex: 1 1 auto;
+    margin: 0;
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+.employee-gallery figcaption {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+    header, main, footer {
+        width: 100%;
+    }
+
+    .map-form {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+    }
+}
