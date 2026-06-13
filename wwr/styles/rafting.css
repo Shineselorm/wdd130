@@ -128,15 +128,17 @@ p, section, article {
     color: #fff;
 }
 
-.hero article {
+.hero-callout {
     position: absolute;
     bottom: 10px;
     left: 10px;
     right: 10px;
+    margin: 16px;
+    padding: 8px;
     background-color: rgb(255 255 255 / 0.85);
 }
 
-.hero article img {
+.hero-callout img {
     float: right;
     width: 125px;
 }
